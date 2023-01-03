@@ -1,0 +1,43 @@
+<html>
+  <head></head>
+  <body>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .parent-div {
+        display: inline-block;
+        position: relative;
+      }
+
+      .overlapping-div {
+        background-color: black;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+
+    <div class="parent-div">
+      <div id="overlappingDiv" class="overlapping-div"></div>
+      <canvas></canvas>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
+    <script src="./data/collisions.js"></script>
+    <script src="./data/battleZones.js"></script>
+    <script src="Sprite.js"></script>
+    <script src="Boundary.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
